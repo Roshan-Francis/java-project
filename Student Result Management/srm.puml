@@ -1,0 +1,54 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class adminHome
+class adminIndex
+class allStudentResult
+class index
+class insertNewResult
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class net.proteanit.sql.DbUtils
+class registeredStudent
+class student.result.management.StudentResultManagement
+class studentHome
+class studentIndex
+adminHome ..> java.lang.SuppressWarnings
+adminHome --|> javax.swing.JFrame
+adminHome ..> javax.swing.JOptionPane
+adminIndex ..> java.lang.SuppressWarnings
+adminIndex --|> javax.swing.JFrame
+adminIndex ..> javax.swing.JOptionPane
+allStudentResult ..> java.lang.SuppressWarnings
+allStudentResult ..> java.sql.Connection
+allStudentResult ..> java.sql.DriverManager
+allStudentResult ..> java.sql.ResultSet
+allStudentResult ..> java.sql.Statement
+allStudentResult --|> javax.swing.JFrame
+allStudentResult ..> javax.swing.JOptionPane
+allStudentResult ..> net.proteanit.sql.DbUtils
+index ..> java.lang.SuppressWarnings
+index --|> javax.swing.JFrame
+insertNewResult ..> java.lang.SuppressWarnings
+insertNewResult --|> javax.swing.JFrame
+insertNewResult ..> javax.swing.JOptionPane
+registeredStudent ..> java.lang.SuppressWarnings
+registeredStudent --|> javax.swing.JFrame
+registeredStudent ..> javax.swing.JOptionPane
+registeredStudent ..> net.proteanit.sql.DbUtils
+studentHome ..> java.lang.SuppressWarnings
+studentHome ..> java.sql.Connection
+studentHome ..> java.sql.DriverManager
+studentHome ..> java.sql.ResultSet
+studentHome ..> java.sql.SQLException
+studentHome ..> java.sql.Statement
+studentHome --|> javax.swing.JFrame
+studentHome ..> javax.swing.JOptionPane
+studentIndex ..> java.lang.SuppressWarnings
+studentIndex --|> javax.swing.JFrame
+studentIndex ..> javax.swing.JOptionPane
+@enduml
